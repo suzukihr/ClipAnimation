@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <com.example.clipanimation.ClipAnimationImageView
+        android:id="@+id/clipAnimationImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioButtonTransformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CIRCLE"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonLeftToRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEFT TO RIGHT"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonTopToBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOP TO BOTTOM"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonDroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DROID"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/buttonShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOW"
+            />
+
+        <Button
+            android:id="@+id/buttonHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIDE"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
