@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Bind(R.id.clipAnimationImageView)
     ClipAnimationImageView clipAnimationImageView;
-    @Bind(R.id.radioButtonTransformation)
-    RadioGroup radioButtonTransformation;
+    @Bind(R.id.radioGroup)
+    RadioGroup radioGroup;
     @Bind(R.id.buttonShow)
     Button buttonShow;
     @Bind(R.id.buttonHide)
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private ClipAnimation getClipAnimation() {
-        switch (radioButtonTransformation.getCheckedRadioButtonId()) {
+        switch (radioGroup.getCheckedRadioButtonId()) {
             default:
             case R.id.radioButtonCircle:
                 return new CircleClipAnimation();
